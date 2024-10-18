@@ -1,7 +1,87 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.bg-info-dark {
+    background-color: #1234f4;
+    opacity: 0.85; 
+} 
+
+.bg-infor {
+    background-color: rgb(42, 35, 254);
+    color: white;
+    opacity: 0.85; 
+} 
+
+.bg-button {
+    color: #4156cc;
+    opacity: 0.85; 
+} 
+
+h1 {
+    color: aliceblue;
+}
+
+ul {
+    color: aliceblue;
+}
+
+.nav-item {
+    color: white; /* Color de los elementos del nav */
+}
+
+.nav-link {
+    color: white; /* Color de los enlaces del nav */
+}
+
+.nav-link:hover {
+    color: black; /* Color al hacer hover sobre los enlaces del nav */
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #9da6db;
+}
+
+.cards {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Espacio entre las cards */
+}
+
+.card {
+    width: 100%;
+}
+
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.pie-de-pagina {
+    background-color: #4156cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .bg-info-dark {
     background-color: #1234f4;
     
+    opacity: 0.85; 
+} 
+.bg-infor {
+    background-color: rgb(42, 35, 254);
+    color: white;
     opacity: 0.85; 
 } 
 .bg-button {
@@ -19,14 +99,33 @@ ul{
     color: aliceblue;
 }
 
-body{
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #9da6db;
 }
-.pie-de-pagina{
+
+.cards {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px; 
+    padding: 10px 20px;
+    flex: 1; 
+    text-align: center;
+}
+
+.pie-de-pagina {
     opacity: 0.85; 
-    margin-top: 38%;
-    height: 110px;
     background-color: #1234f4;
+    padding: 20px 0;
+    text-align: center; 
 }
 .pie-de-pagina i{
     
@@ -41,22 +140,125 @@ body{
     color: white;
 }
 
-.cards{
-    text-align: center;
-    margin: 20px;
+.cards {
+    margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    max-width: 1200px; 
     padding: 10px 20px;
-
-}
-.card-body{
-    border: #1234f4;
-    background-color: #2e4beede;
-    color:aliceblue;
+    text-align: center;
 }
 
-.accordion{
-    width: 300px;
-    margin: -280px 450px;
+.completeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.bg-info-dark {
+    background-color: #1234f4;
+    opacity: 0.85; 
+}
+
+.bg-button {
+    color: #4156cc;
+    opacity: 0.85; 
+} 
+
+h1 {
+    color: aliceblue;
+}
+
+ul {
+    color: aliceblue;
+}
+
+.nav-item {
+    color: aliceblue;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    background-color: #9da6db;
+}
+
+.cards {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px; 
+    padding: 10px 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.pie-de-pagina {
+    opacity: 0.85; 
+    background-color: #1234f4;
+    padding: 20px 0; 
+    text-align: center;
+}
+.pie-de-pagina i {
+    margin: 25px;
+    color: black;
+}
+
+.pie-de-pagina p {
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.cards {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+    max-width: 1200px; 
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+.completeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 100%; 
+    max-width: 500px;
+}
+
+.accordion {
+    width: 100%; /* Ajusta el ancho del acordeón al tamaño de la card */
+    margin-top:  5px 10px; /* Ajuste para dar espacio entre la card y el acordeón */
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, las cards se apilan verticalmente */
+    }
+
+    .pie-de-pagina {
+        margin-top: 20%;
+        height: auto; /* Ajusta la altura automáticamente en pantallas más pequeñas */
+    }
 }
